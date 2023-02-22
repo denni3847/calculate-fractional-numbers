@@ -1,0 +1,21 @@
+function calculateFraction(num1, num2) {
+  if (num2 === 0) {
+    throw new Error("Cannot divide by zero");
+  }
+  return num1 / num2;
+}
+
+
+This function takes two arguments, num1 and num2, which represent the numerator and denominator of the fraction, respectively. It first checks if num2 is equal to zero, which would result in a division by zero error. If num2 is not zero, the function returns the result of dividing num1 by num2.
+Example of how you can use this function:
+
+
+const numerator = 3;
+const denominator = 4;
+const result = calculateFraction(numerator, denominator);
+
+console.log(`${numerator}/${denominator} = ${result}`);
+
+
+In this example, we define numerator and denominator variables to represent the fraction 3/4. We then call calculateFraction with these values and store the result in the result variable. Finally, we log the result to the console in a human-readable format.
+
